@@ -1,0 +1,24 @@
+{
+  "ts-node": {
+    "esm": true
+  },
+  "compilerOptions": {
+    "baseUrl": "./src",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+    "outDir": "build",
+    "allowJs": true,
+    "target": "es5",
+    "module": "commonjs",
+    "removeComments": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "inlineSources": true,
+    "newLine": "lf"
+  },
+  "include": [
+    "./src/**/*"
+  ],
+  "exclude": ["node_modules", "**/*.test.ts", "build", "**/*.interface.ts"]
+}
